@@ -1,5 +1,7 @@
 import random
+import tkinter
 
+#! Def para quando ganhar 
 def ganhou(numeroAleatorio, difiEscolhida) :
     print(f"\nParabéns! Você adivinhou o número {numeroAleatorio} corretamente!\n")
     chancesRestantes = 0
@@ -13,10 +15,12 @@ def ganhou(numeroAleatorio, difiEscolhida) :
         print("Opção inválida!")
         ganhou() 
 
+#! Def para quando perder 
 def perdeu(numeroAleatorio, difiEscolhida) :
     print(f"\nVocê não acertou o número! Ele era o número {numeroAleatorio}\n")
     respostaJogarNovamente = int(input("Jogar novamente? 1 - Sim | 2 - Não \n"))
 
+    #! Verificação p/ jogar novamente
     if (respostaJogarNovamente == 1) :
         if (difiEscolhida == 1) :
             facil()
@@ -34,6 +38,7 @@ def perdeu(numeroAleatorio, difiEscolhida) :
         print("Opção inválida!")
         perdeu(numeroAleatorio, difiEscolhida)
 
+#! Dificuldade Fácil
 def facil() :
     difiEscolhida = 1
     chancesRestantes = 5
@@ -44,12 +49,13 @@ def facil() :
         chancesRestantes -= 1
         palpite = int(input("Digite seu palpite: "))
 
-        if (palpite == numeroAleatorio) :
+        if (palpite == numeroAleatorio) :                        #! Vai p/ a tela de ganhar o jogo
             ganhou(numeroAleatorio, difiEscolhida)
 
-        elif (chancesRestantes == 0) :
+        elif (chancesRestantes == 0) :                           #! Vai p/ a tela de perder o jogo
             perdeu(numeroAleatorio, difiEscolhida)
 
+#! Dificuldade Normal
 def normal() :
     difiEscolhida = 2
     chancesRestantes = 8
@@ -60,12 +66,13 @@ def normal() :
         chancesRestantes -= 1
         palpite = int(input("Digite seu palpite: "))
 
-        if (palpite == numeroAleatorio) :
+        if (palpite == numeroAleatorio) :                        #! Vai p/ a tela de ganhar o jogo
             ganhou(numeroAleatorio, difiEscolhida)
 
-        elif (chancesRestantes == 0) :
+        elif (chancesRestantes == 0) :                           #! Vai p/ a tela de perder o jogo
             perdeu(numeroAleatorio, difiEscolhida)
 
+#! Dificuldade Difícil
 def dificil() :
     difiEscolhida = 3
     chancesRestantes = 10
@@ -76,12 +83,13 @@ def dificil() :
         chancesRestantes -= 1
         palpite = int(input("Digite seu palpite: "))
 
-        if (palpite == numeroAleatorio):
+        if (palpite == numeroAleatorio):                        #! Vai p/ a tela de ganhar o jogo
             ganhou(numeroAleatorio, difiEscolhida)
 
-        elif (chancesRestantes == 0):
+        elif (chancesRestantes == 0):                           #! Vai p/ a tela de perder o jogo
             perdeu(numeroAleatorio, difiEscolhida)
 
+#! Dificuldade Extremo
 def extremo() :
     difiEscolhida = 4
     chancesRestantes = 10
@@ -92,12 +100,13 @@ def extremo() :
         chancesRestantes -= 1
         palpite = int(input("Digite seu palpite: "))
 
-        if (palpite == numeroAleatorio):
+        if (palpite == numeroAleatorio):                        #! Vai p/ a tela de ganhar o jogo
             ganhou(numeroAleatorio, difiEscolhida)
 
-        elif (chancesRestantes == 0):
+        elif (chancesRestantes == 0):                           #! Vai p/ a tela de perder o jogo
             perdeu(numeroAleatorio, difiEscolhida)
 
+#! Dificuldade Impossível
 def impossivel() :
     difiEscolhida = 5
     chancesRestantes = 1
@@ -108,12 +117,13 @@ def impossivel() :
         chancesRestantes -= 1
         palpite = int(input("Digite seu palpite: "))
 
-        if (palpite == numeroAleatorio):
+        if (palpite == numeroAleatorio):                        #! Vai p/ a tela de ganhar o jogo
             ganhou(numeroAleatorio, difiEscolhida)
 
-        elif (chancesRestantes == 0):
+        elif (chancesRestantes == 0):                           #! Vai p/ a tela de perder o jogo
             perdeu(numeroAleatorio, difiEscolhida)
 
+#! Menu de escolha de dificuldade
 def dificuldade() :
     print("-" * 30)
     print("Escolha a Dificuldade".center(30))
@@ -145,6 +155,7 @@ def dificuldade() :
         print("Opção inválida!")
         dificuldade()
 
+#! Main do programa
 def main() :
     while True :
         print("-" * 30)
@@ -156,7 +167,7 @@ def main() :
 
         respostaMenu = int(input("Digite a opção desejada: "))
 
-        if (respostaMenu == 1) :
+        if (respostaMenu == 1) :                                #! Vai p/ a escolha das dificuldades
             dificuldade()
 
         elif (respostaMenu == 2) :
@@ -164,8 +175,8 @@ def main() :
             break
 
         else :
-            print("Opção Inválida!")
+            print("Opção Inválida!")                            #! Opção inválida, retorna para a main
             main()
 
-#CHAMADA
+#! Chamada
 main()

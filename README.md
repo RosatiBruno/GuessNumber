@@ -5,9 +5,12 @@ GuessRandom é um simples jogo de adivinhação de números desenvolvido em Pyth
 
 ## Funcionalidades
 - Geração aleatória de números dentro de um intervalo definido. ✔️
-- Interface simples e interativa para o usuário inserir suas suposições. ✔️
-- Contagem de tentativas e feedback para o usuário sobre a proximidade de sua suposição em relação ao número correto. ❌
+- Interface simples em texto, interativa para o usuário inserir suas suposições. ✔️
 - Opção de jogar novamente após cada rodada. ✔️
+
+## Funcionalidades a Serem Implementadas
+- Interface gráfica interativa para o usuário inserir suas suposições. ❌
+- Contagem de tentativas e feedback para o usuário sobre a proximidade de sua suposição em relação ao número correto. ❌
 
 ## Instruções de Uso
 1. Clone o repositório em sua máquina local.
