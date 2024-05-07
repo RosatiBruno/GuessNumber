@@ -7,10 +7,11 @@ GuessRandom é um simples jogo de adivinhação de números desenvolvido em Pyth
 - Geração aleatória de números dentro de um intervalo definido. ✔️
 - Interface simples em texto, interativa para o usuário inserir suas suposições. ✔️
 - Opção de jogar novamente após cada rodada. ✔️
+- Contagem de tentativas restantes. ✔️
 
 ## Funcionalidades a Serem Implementadas
 - Interface gráfica interativa para o usuário inserir suas suposições. ❌
-- Contagem de tentativas e feedback para o usuário sobre a proximidade de sua suposição em relação ao número correto. ❌
+- Feedback para o usuário sobre a proximidade de sua suposição em relação ao número correto. ❌
 
 ## Instruções de Uso
 1. Clone o repositório em sua máquina local.
@@ -18,14 +19,14 @@ GuessRandom é um simples jogo de adivinhação de números desenvolvido em Pyth
 git clone https://github.com/RosatiBruno/GuessNumber.git
 ```
 2. Navegue até o diretório do projeto.
-```
-cd guess-number
-```
-3. Execute o jogo com o Python diretamente do GitBash.
-```
-python guess-number.py
-```
-4. Siga as instruções exibidas no terminal para jogar.
+
+3. Escolha a versão que deseja jogar:
+   Text-Based: É a versão inicial do jogo, 100% baseada em texto.
+   Interface-Based: Segunda versão do jogo, conta com uma interface visual para jogar. (Indisponível)
+
+4. Abra o executável do jogo.
+
+5. Siga as instruções exibidas para jogar.
 
 ## Requisitos
 - Python 3 ou superior.
