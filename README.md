@@ -21,8 +21,8 @@ git clone https://github.com/RosatiBruno/GuessNumber.git
 2. Navegue até o diretório do projeto.
 
 3. Escolha a versão que deseja jogar:
-   Text-Based: É a versão inicial do jogo, 100% baseada em texto.
-   Interface-Based: Segunda versão do jogo, conta com uma interface visual para jogar. (Indisponível)
+   <br>Text-Based: É a versão inicial do jogo, 100% baseada em texto.
+   <br>Interface-Based: Segunda versão do jogo, conta com uma interface visual para jogar. (Indisponível)
 
 4. Abra o executável do jogo.
 
